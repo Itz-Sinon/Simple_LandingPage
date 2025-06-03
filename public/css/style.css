@@ -426,6 +426,9 @@ textarea:focus {
 }
 
 @media (max-width: 780px) {
+  body {
+    overflow-x: hidden;
+  }
   #NavBar {
     height: 150px;
     position:relative;
@@ -463,17 +466,17 @@ textarea:focus {
   }
   #Page1-Content {
     width: 100%;
-    height: 60%;
+    height: 40%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 0;
     text-align: center;
   }
   #Page1-Img {
     width: 100%;
-    height: 600px;
+    height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -543,9 +546,13 @@ textarea:focus {
     justify-content: center;
   }
   #Page3-Btn-BtnPlace a {
-    width: 45%;
+    width: 40%;
+    margin: 0 20px;
   }
   #Page3-Btn-Content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     margin-top: 10px;
   }
   #Page3-Statistic {
